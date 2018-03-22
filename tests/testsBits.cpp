@@ -15,7 +15,7 @@ namespace tests::bits
         std::iota(bits.begin(), bits.end(), 0);
 
         for (const size_t bit : bits) {
-            std::cout << "  Bit " << bit << " is " << (alg::bits::isBitOne(num, bit) ? "1" : "0") << std::endl;
+            std::cout << "  Bit " << bit << " is " << (alg::bits::isBitOne(num, alg::bits::BitIndex(bit)) ? "1" : "0") << std::endl;
         }
         std::cout << std::endl;
     }
